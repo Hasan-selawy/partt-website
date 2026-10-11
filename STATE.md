@@ -43,6 +43,6 @@ partt agency website (Next.js 16.4, React 19, TS, plain CSS). Homepage refinemen
 - Get a high-resolution Salt Beach product photo to replace `public/img/work/salt-beach/01.jpg`.
 
 ## Decisions
-- [claude 2026-10-11] No git for now (user's call). Init only when user asks.
+- [claude 2026-10-11] Git set up at the user's request: private repo https://github.com/Hasan-selawy/partt-website, branch `main`. Commit identity is repo-local (Hasan-selawy, GitHub no-reply email).
 - [claude 2026-10-11] Homepage work classes are `.pj*` because `.wk` is taken by the /work page.
 - [claude 2026-10-11] Logo files are white, so the logo rows stay on navy.
