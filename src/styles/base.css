@@ -1,0 +1,98 @@
+/*
+  partt design tokens and base rules.
+  Colours and fonts come from the partt brand guideline. Shape rule for the whole site:
+  buttons are pills, sheets have large rounded top corners, photos and inputs have small rounded corners.
+*/
+:root {
+  --paper: #FFFFF9;
+  --ink: #0B0344;
+  --deep: #0A001A;
+  --red: #E7292B;
+  --orange: #F78813;
+  --mute: #55517C;            /* secondary text on paper */
+  --line: rgba(11, 3, 68, 0.16);
+  --error: #C11A1D;           /* brand red darkened so small error text passes contrast on paper */
+
+  --disp: var(--font-disp), 'Bebas Neue', Impact, 'Arial Narrow', sans-serif;
+  --body: var(--font-body), Poppins, 'Segoe UI', system-ui, sans-serif;
+
+  --pad: clamp(18px, 4.2vw, 64px);   /* side gutter */
+  --nh: 72px;                        /* nav height */
+  --rad: clamp(22px, 3.4vw, 52px);   /* sheet corner */
+  --rad-s: clamp(10px, 1.3vw, 20px); /* photo corner */
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  color-scheme: light;
+}
+
+html { overflow-x: clip; scroll-behavior: smooth; }
+html.rm { scroll-behavior: auto; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.5; overflow-x: clip; -webkit-font-smoothing: antialiased; }
+*, *::before, *::after { box-sizing: border-box; }
+h1, h2, h3, p, ul, ol, figure, dl, dd { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+address { font-style: normal; }
+:focus-visible { outline: 3px solid var(--orange); outline-offset: 4px; }
+::selection { background: var(--orange); color: var(--deep); }
+input, textarea, select { caret-color: var(--red); accent-color: var(--red); }
+[id] { scroll-margin-top: var(--nh); }
+
+/* display type: Bebas Neue, always uppercase, tight */
+.disp { font-family: var(--disp); font-weight: 400; text-transform: uppercase; line-height: 0.84; letter-spacing: 0; }
+
+/* wordmark colours: "par" follows --n1 or the text colour, "tt" follows --n2 or brand red */
+.wp { fill: var(--n1, currentColor); }
+.wt { fill: var(--n2, var(--red)); }
+
+/* grounds. --ac is the accent on that ground, --pc the colour of the mark piece */
+.t-paper { --bg: var(--paper); --fg: var(--ink); --ac: var(--red); --pc: var(--orange); }
+.t-orange { --bg: var(--orange); --fg: var(--deep); --ac: var(--paper); --pc: var(--paper); }
+.t-red { --bg: var(--red); --fg: var(--paper); --ac: var(--deep); --pc: var(--ink); }
+.t-ink { --bg: var(--ink); --fg: var(--paper); --ac: var(--orange); --pc: var(--red); }
+.t-deep { --bg: var(--deep); --fg: var(--paper); --ac: var(--orange); --pc: var(--red); }
+
+/* visible only to screen readers */
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* skip link: hidden until a keyboard user reaches it */
+.skip { position: fixed; left: 12px; top: 12px; z-index: 100; background: var(--ink); color: var(--paper); padding: 12px 18px; border-radius: 999px; font-weight: 600; }
+.skip:not(:focus) { width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* buttons */
+.btn { display: inline-flex; align-items: center; gap: 14px; white-space: nowrap; font-size: 19px; font-weight: 600; line-height: 1; padding: 19px 28px 19px 30px; border-radius: 999px; background: var(--ink); color: var(--paper); transition: background 0.3s, color 0.3s, transform 0.5s var(--ease); }
+.btn i { font-style: normal; transition: transform 0.4s var(--ease); }
+.btn:hover { background: var(--red); color: var(--paper); }
+.btn:hover i { transform: translateX(6px); }
+.btn:active { scale: 0.97; }
+.btn.inv { background: var(--paper); color: var(--ink); }
+.btn.inv:hover { background: var(--orange); color: var(--deep); }
+.btn:disabled { opacity: 0.6; cursor: progress; }
+
+/* small text link with an arrow */
+.tlink { display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; line-height: 1.2; padding-block: 6px; border-bottom: 2px solid currentColor; transition: gap 0.35s var(--ease); }
+.tlink i { font-style: normal; }
+.tlink:hover { gap: 14px; }
+
+/* content that fades up when it scrolls into view. Without JavaScript, or with reduced motion, it is simply visible. */
+.js .rv { opacity: 0; transform: translate3d(0, 32px, 0); transition: opacity 0.8s var(--ease), transform 0.9s var(--ease); }
+.js .rv.in { opacity: 1; transform: none; }
+.rm .rv { opacity: 1; transform: none; }
+
+/* "content needed" marker: see components/ui/Placeholder.tsx */
+.needs { border: 2px dashed var(--orange); border-radius: 12px; padding: 16px 18px; background: rgba(247, 136, 19, 0.09); max-width: 36em; color: var(--deep); }
+.needs-k { font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A4500; }
+.needs-t { font-weight: 600; }
+.needs-d { font-size: 15px; }
+
+@keyframes rise { from { transform: translate3d(0, 112%, 0); } to { transform: none; } }
+@keyframes fade { from { opacity: 0; transform: translate3d(0, 22px, 0); } to { opacity: 1; transform: none; } }
+
+@media (max-width: 820px) {
+  :root { --nh: 60px; }
+  .btn { padding: 16px 22px 16px 24px; }
+}
+
+/* reduced motion: nothing animates or transitions */
+.rm *, .rm *::before, .rm *::after { animation: none !important; transition: none !important; }
