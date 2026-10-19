@@ -8,7 +8,7 @@ Implement the user's Partt Group Careers build instructions in this repository, 
 
 Update, 19 October 2026: the complete ten-phase instructions are available in the project-root `career site enhance.txt` and have been read. This supersedes the earlier missing-instructions stopping point. Some copied paths, commands, package names and code punctuation are flattened; report genuine exact-name/API conflicts before implementing, as the document requires. Phase 8 specifies four public integration environment variables, superseding the earlier two-variable overview.
 
-The user's current request is to save the current project to GitHub before enhancement implementation. A baseline checkpoint is being prepared on `main` in the existing private `Hasan-selawy/partt-website` repository, with restore tag `pre-group-careers-20261019`. Task record: `.planning/quick/20261019-github-checkpoint/`. Fresh TypeScript and isolated production build both pass. Candidate-file secret scan has no findings; private environment, credential, database and CV files remain ignored.
+The user's request to save the current project to GitHub before enhancement implementation is complete. Baseline commit `227880bb75171ef65feeaca476eb28f45b7b4507` is pushed to `main` in the existing private `Hasan-selawy/partt-website` repository, with restore tag `pre-group-careers-20261019`. Remote main and the peeled restore tag were verified against that commit after the push. A documentation-only follow-up records the result. Task record: `.planning/quick/20261019-github-checkpoint/`. Fresh TypeScript and isolated production build both pass. Candidate/staged secret scans have no findings; private environment, credential, database and CV files remain ignored.
 
 No Group Careers implementation phase has started. The existing single-company SQLite/local-storage module and all previously approved website work are preserved. No application source, dependencies, external accounts, recruiting records or deployment were changed by this checkpoint task. See the latest STATE entry and checkpoint summary for the verified GitHub commit after the push.
 
@@ -33,7 +33,7 @@ No Group Careers implementation phase has started. The existing single-company S
 - Never commit secrets, `.env*.local`, databases, CVs or credential files.
 - If the instructions conflict with actual code or an API differs, stop and report; do not guess.
 
-## Preflight findings
+## Preflight findings (historical; approved pending work is now committed in the checkpoint)
 
 - Branch: `main`, workspace `C:/Users/hasan/Downloads/partt-nextjs`.
 - The working tree has extensive preexisting uncommitted Careers, policy, image and motion changes. Preserve them. Do not commit or discard unrelated work. A clean committed baseline for the existing module does not yet exist.

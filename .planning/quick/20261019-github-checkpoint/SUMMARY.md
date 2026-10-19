@@ -1,5 +1,5 @@
 ---
-status: in-progress
+status: complete
 ---
 
 # Current Partt project checkpoint
@@ -17,9 +17,14 @@ status: in-progress
 - Full enhancement instructions are included as supplied; Group Careers implementation has not started.
 - No deployment, external account creation, secret changes or recruiting data changes.
 
-## Next
+## GitHub checkpoint
 
-Review staged files, commit this baseline, create `pre-group-careers-20261019`, push to GitHub, and verify the remote commit/tag.
+- Baseline commit: `227880bb75171ef65feeaca476eb28f45b7b4507` (`chore: save Partt site before group careers enhancements`).
+- Restore tag: `pre-group-careers-20261019`.
+- Pushed normally and atomically to the existing private repository: https://github.com/Hasan-selawy/partt-website.
+- GitHub's remote main and peeled restore tag were both checked against the baseline commit after the push; both matched.
+- Working tree was clean after the baseline push. A following documentation-only commit records this verified result; it does not change the saved website.
+- Future work: review the full enhancement instructions and resolve genuine ambiguities before beginning the ordered implementation phases.
 
 ## Workflow adaptation
 
