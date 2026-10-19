@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { Fragment, useState, type CSSProperties } from 'react';
+import { useState, type CSSProperties } from 'react';
 import { clients, type Client } from '@/content/clients';
 import { clientsLabel } from '@/content/home';
 
@@ -11,10 +11,7 @@ function Row({ list, dir, hidden = false }: { list: Client[]; dir: 1 | -1; hidde
     <div className="mq" data-dir={dir} aria-hidden={hidden || undefined}>
       {[0, 1].map((copy) =>
         list.map((client) => (
-          <Fragment key={`${copy}-${client.name}`}>
-            <Image src={client.logo} alt={copy === 0 && !hidden ? client.name : ''} width={client.w} height={client.h} sizes="(max-width:820px) 60vw, 24vw" loading="eager" style={{ '--k': client.scale } as CSSProperties} />
-            <b aria-hidden="true">+</b>
-          </Fragment>
+          <Image key={`${copy}-${client.name}`} src={client.logo} alt={copy === 0 && !hidden ? client.name : ''} width={client.w} height={client.h} sizes="(max-width:820px) 60vw, 24vw" loading="eager" style={{ '--k': client.scale } as CSSProperties} />
         )),
       )}
     </div>

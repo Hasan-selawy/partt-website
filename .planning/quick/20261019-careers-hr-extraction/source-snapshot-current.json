@@ -1,0 +1,898 @@
+{
+  "date": "2026-10-19",
+  "branch": "main",
+  "files": [
+    {
+      "path": ".env.example",
+      "category": "host-reference",
+      "bytes": 705,
+      "sha256": "8dbf3b729e2916ce5a115fd8ed74de5ec39ccef15bc2c5eb3efa885920a79d40"
+    },
+    {
+      "path": ".gitignore",
+      "category": "host-reference",
+      "bytes": 94,
+      "sha256": "7e7426c07365fdf6486a3a19c7b3402575ddc325cd55d14b9c7b005e6a08506f"
+    },
+    {
+      "path": "docs/careers-dashboard-architecture.md",
+      "category": "host-reference",
+      "bytes": 1625,
+      "sha256": "e2f3885d4454ec59d7bde56672fd13a0a0ae3c6a06751deb75e364f489116ad4"
+    },
+    {
+      "path": "docs/hr-dashboard.md",
+      "category": "host-reference",
+      "bytes": 7792,
+      "sha256": "743d65a7ec202549ad886d4c5f20eb6c0bacdceb2246b0a0a7b0e2cd23d74796"
+    },
+    {
+      "path": "next.config.ts",
+      "category": "host-reference",
+      "bytes": 970,
+      "sha256": "d4b1ecab420995938624cc0114778718d64354133ba3d43320120bb8fd9d2d15"
+    },
+    {
+      "path": "package-lock.json",
+      "category": "host-reference",
+      "bytes": 194387,
+      "sha256": "a0aa8985526f7fcc3acf8f483553014ee304e3fbf6ead2eb14231a8625786658"
+    },
+    {
+      "path": "package.json",
+      "category": "host-reference",
+      "bytes": 1394,
+      "sha256": "561e60191d0c3057f1b69bf88d2b7de848f68567dff2b58462914cd09c5d326f"
+    },
+    {
+      "path": "payload.config.ts",
+      "category": "feature-source",
+      "bytes": 2241,
+      "sha256": "e566a45a24078c5717a9e348aa527802f6d991614f29ad8f5ff28f4091fb5d12"
+    },
+    {
+      "path": "scripts/cleanup-careers-verification.ts",
+      "category": "feature-source",
+      "bytes": 1316,
+      "sha256": "39ddc77e1120771a5e0c57a8dd85942d624c0fd667aaa602c1f4ca1d7b61d2aa"
+    },
+    {
+      "path": "scripts/create-hr-admin.ts",
+      "category": "feature-source",
+      "bytes": 1156,
+      "sha256": "46535f53605dd423991b5b278af4bdc51e2b3ab632a8a446f797974037264742"
+    },
+    {
+      "path": "scripts/init-careers.mjs",
+      "category": "feature-source",
+      "bytes": 506,
+      "sha256": "98be4d121ce3dee6ad7c36339c20a2ea6ed3d38e0925cd017de7752476c7da4f"
+    },
+    {
+      "path": "scripts/reset-hr-password.ts",
+      "category": "feature-source",
+      "bytes": 1222,
+      "sha256": "5d2158c8ebc847d2a39e392c75b33ba8de2ad0215b4e21a6e077ac3c9b62f231"
+    },
+    {
+      "path": "scripts/verify-careers-bootstrap.ts",
+      "category": "feature-source",
+      "bytes": 1919,
+      "sha256": "68738752107a021d77d14b5ea33de7b1c65d56ecdca34b4c1b237753332bbe64"
+    },
+    {
+      "path": "scripts/verify-careers.mjs",
+      "category": "feature-source",
+      "bytes": 10570,
+      "sha256": "ea18a8087d65a9603eabcfba295a871b4199b8f62d3bfeb6c2b1492f07a6c31b"
+    },
+    {
+      "path": "src/app/(cms)/api/cms/[...slug]/route.ts",
+      "category": "feature-source",
+      "bytes": 698,
+      "sha256": "9f75c0eccc68937aa0bb9373e2354a19cd978a8a8fc89b8b69fac7c0f1f6dedd"
+    },
+    {
+      "path": "src/app/(cms)/hr/[[...segments]]/page.tsx",
+      "category": "feature-source",
+      "bytes": 524,
+      "sha256": "7d3d55411c1c4a7d9d78bf62072c86b50f03071817ef4b2fb2b45ca45f3dbe0b"
+    },
+    {
+      "path": "src/app/(cms)/hr/importMap.ts",
+      "category": "feature-source",
+      "bytes": 1277,
+      "sha256": "5b9d6564397e660ef08b00e5686f7dd042c2e6c5260a2bd4849f5893ea45d35d"
+    },
+    {
+      "path": "src/app/(cms)/layout.tsx",
+      "category": "feature-source",
+      "bytes": 672,
+      "sha256": "cfde735173e40232bf0d16deb44ba951c9e6ce9c54226e7e75a055a13dcb530f"
+    },
+    {
+      "path": "src/app/(site)/careers/[slug]/page.tsx",
+      "category": "feature-source",
+      "bytes": 825,
+      "sha256": "5f31a5a9c3ac0b48536a62be65b9c4a503a0fe061a87cd5e8f33986c83f58438"
+    },
+    {
+      "path": "src/app/(site)/careers/page.tsx",
+      "category": "feature-source",
+      "bytes": 466,
+      "sha256": "26cfdf81786ecc39ebb43c349d7d7b0a18f732473a49720df4ec83550526e7cf"
+    },
+    {
+      "path": "src/app/(site)/cookie-policy/page.tsx",
+      "category": "host-reference",
+      "bytes": 286,
+      "sha256": "20864a716f02c7e90be99c76296c5c3a14025f8a37e2fd4308fcb60b55c9f221"
+    },
+    {
+      "path": "src/app/(site)/layout.tsx",
+      "category": "host-reference",
+      "bytes": 2061,
+      "sha256": "d6d9c685cfc8accd6d41dc4eaca459d11fe6bd5221953b81170f7b0c5a6106dc"
+    },
+    {
+      "path": "src/app/(site)/not-found.tsx",
+      "category": "host-reference",
+      "bytes": 248,
+      "sha256": "ecffe7201e1722c32c4392f276df790ffc9def726d821980f25dca7523fe3e7e"
+    },
+    {
+      "path": "src/app/(site)/privacy-policy/page.tsx",
+      "category": "host-reference",
+      "bytes": 287,
+      "sha256": "0256708223f87bcfb0f4547a4ff01bc1af8e6a876255c0c915770ae5513c4671"
+    },
+    {
+      "path": "src/app/(site)/terms-and-conditions/page.tsx",
+      "category": "host-reference",
+      "bytes": 288,
+      "sha256": "6fcf1fc7c6c63df0b2aaab8b4351567ebe25762871e054e8e1433bfec445a89d"
+    },
+    {
+      "path": "src/app/api/careers/apply/route.ts",
+      "category": "feature-source",
+      "bytes": 4211,
+      "sha256": "8cbe563082bf5bc250db549ad2cf3243de593b753f0022a2e29634219160ef19"
+    },
+    {
+      "path": "src/app/api/careers/export/route.ts",
+      "category": "feature-source",
+      "bytes": 1482,
+      "sha256": "8b54afb56b92b2e942dda1075f51f25e518e749fc36216a1b521cfaa0b4581cb"
+    },
+    {
+      "path": "src/app/global-not-found.tsx",
+      "category": "host-reference",
+      "bytes": 453,
+      "sha256": "7706802894f2edb89af81e8e683e1275f06f751233490b1d254230d9e6f8d31b"
+    },
+    {
+      "path": "src/app/robots.ts",
+      "category": "host-reference",
+      "bytes": 291,
+      "sha256": "72af37ade252f7966627dd12ba9dea19c1e2b8a5bf07611783d98a06604a35e1"
+    },
+    {
+      "path": "src/app/sitemap.ts",
+      "category": "host-reference",
+      "bytes": 1001,
+      "sha256": "39b52c70c0768b55ef959adc0446ae0b1e7907dc2031932dc1df14189e04cfee"
+    },
+    {
+      "path": "src/cms/Applications.ts",
+      "category": "feature-source",
+      "bytes": 3456,
+      "sha256": "f19dd480cffc9d1dd1703663bbd5258f765a1c261e298f6e560e69265164fce5"
+    },
+    {
+      "path": "src/cms/Jobs.ts",
+      "category": "feature-source",
+      "bytes": 3198,
+      "sha256": "550e3588779f917113eae5fc5a7ffea4aa712f35e855fc2d3b5e0e132c3f7958"
+    },
+    {
+      "path": "src/cms/Staff.ts",
+      "category": "feature-source",
+      "bytes": 1956,
+      "sha256": "1f4f525c9308391a6cca7e3d522fdf84ac4ede4478696054521ff2fd3fb1e7ac"
+    },
+    {
+      "path": "src/cms/access.ts",
+      "category": "feature-source",
+      "bytes": 391,
+      "sha256": "8702d63d63c10118fd223954aa80ecb3505604e21263bae96e094f30fdbd1f68"
+    },
+    {
+      "path": "src/components/careers/ApplicationForm.tsx",
+      "category": "feature-source",
+      "bytes": 4526,
+      "sha256": "cdb8f65581ab91d56477ece5a4f216ac5cd5d8e46010ba374be1ece0e3ffe2ee"
+    },
+    {
+      "path": "src/components/hr/HRBrand.tsx",
+      "category": "feature-source",
+      "bytes": 1135,
+      "sha256": "81b015ab06e3b6e911cded775a7703dceee8f668aa4405b2e00974ea45e6362f"
+    },
+    {
+      "path": "src/components/hr/HROverview.tsx",
+      "category": "feature-source",
+      "bytes": 2538,
+      "sha256": "364bc07ba3042855db03fc8f944cb741a64743c865b077d4f29094987934f6f0"
+    },
+    {
+      "path": "src/components/layout/Closing.tsx",
+      "category": "host-reference",
+      "bytes": 3452,
+      "sha256": "de4c716b58ed629511baf7552c3c86a21d32f88ca9845e20918c18138f962e83"
+    },
+    {
+      "path": "src/components/layout/MotionProvider.tsx",
+      "category": "host-reference",
+      "bytes": 2337,
+      "sha256": "b7897ed33478582ce6167da1976e4ce8522a944587488a1680f2f8daf8ae948f"
+    },
+    {
+      "path": "src/components/layout/Nav.tsx",
+      "category": "host-reference",
+      "bytes": 6249,
+      "sha256": "d2a8d43be9b69f59781df344e5f4a582da1fd43b0ba3f23403aa521f16c5a253"
+    },
+    {
+      "path": "src/components/layout/SiteShell.tsx",
+      "category": "host-reference",
+      "bytes": 524,
+      "sha256": "df3c88dc2a1182fa27372e69dbb8dd331e7fb97b773a17fc73579b3a0ae12f9f"
+    },
+    {
+      "path": "src/components/ui/Button.tsx",
+      "category": "host-reference",
+      "bytes": 1379,
+      "sha256": "dda4a2e54ac5fae62ba3ec7f0eca08fc1c407faa9aa93f997d4da55c3017fe05"
+    },
+    {
+      "path": "src/components/ui/ClosingMark.tsx",
+      "category": "host-reference",
+      "bytes": 2328,
+      "sha256": "7377a9342016520bfe903cb0cce7d1f0fd08183f75bc0c95cb65cce765641599"
+    },
+    {
+      "path": "src/components/ui/MarkPiece.tsx",
+      "category": "host-reference",
+      "bytes": 443,
+      "sha256": "d17135b11e83d666b9807e211436fbbe14e7a104520a2b029db1922f3e881ca7"
+    },
+    {
+      "path": "src/components/ui/PageHero.tsx",
+      "category": "host-reference",
+      "bytes": 1192,
+      "sha256": "5f13fa6207a2c897d039c4077fe56d728b14e1f971ba5f2215e1c43734f71307"
+    },
+    {
+      "path": "src/components/ui/SvgDefs.tsx",
+      "category": "host-reference",
+      "bytes": 659,
+      "sha256": "1ad20642e14764f54a84538a9595a47bc3ef37912703206137df2d836f1ad67a"
+    },
+    {
+      "path": "src/components/ui/Wordmark.tsx",
+      "category": "host-reference",
+      "bytes": 476,
+      "sha256": "e46d3c0447546f6ed1156541f1f76b6d1070bee3f00646897ae60ef1f940bb6f"
+    },
+    {
+      "path": "src/content/mark.ts",
+      "category": "host-reference",
+      "bytes": 7515,
+      "sha256": "ea643525614feaf20021391366935ccbdf76c41f0bb3da1b551140bf9898c13c"
+    },
+    {
+      "path": "src/content/policies.ts",
+      "category": "host-reference",
+      "bytes": 17776,
+      "sha256": "3e7484a42e62b656dbf580eaf4cd12e8a1e364a3ac53e040bfe607a5e5e908e5"
+    },
+    {
+      "path": "src/content/projects.ts",
+      "category": "host-reference",
+      "bytes": 14133,
+      "sha256": "15d6915863b1e6261ad1f203ea6d0ff74ad2853a514c8c5108e0e72a20ab2926"
+    },
+    {
+      "path": "src/content/site.ts",
+      "category": "host-reference",
+      "bytes": 1654,
+      "sha256": "3a0d01ce4aca7fbd9b29224fdf8bfc05542f9493c31c5059bc3102894889e484"
+    },
+    {
+      "path": "src/lib/careers/labels.ts",
+      "category": "feature-source",
+      "bytes": 229,
+      "sha256": "6d5799c440ff157fb5124e7a3fd931f0a3801358e26b8e8d8a620ad99e1540c8"
+    },
+    {
+      "path": "src/lib/careers/queries.ts",
+      "category": "feature-source",
+      "bytes": 705,
+      "sha256": "bfd170e77b4d40b9bd7b7d618f1966a3bbf5a9881adf7a6de9afacabd7f51c88"
+    },
+    {
+      "path": "src/lib/careers/settings.ts",
+      "category": "feature-source",
+      "bytes": 449,
+      "sha256": "7d7a63331e3fb233fbaf89635a04d74e21746c4568ef3be4318720ddd5142045"
+    },
+    {
+      "path": "src/lib/careers/validation.ts",
+      "category": "feature-source",
+      "bytes": 2559,
+      "sha256": "5bb6cc57bd2b36031ffe292a4ebb725f99a020108ef57515cb9c9985486fdbbb"
+    },
+    {
+      "path": "src/lib/motion/boot.ts",
+      "category": "host-reference",
+      "bytes": 787,
+      "sha256": "b21e1dde3c1cf939e9e920b88a5f4aa1b9a9fe74494a173d793604299ff6499e"
+    },
+    {
+      "path": "src/lib/motion/math.ts",
+      "category": "host-reference",
+      "bytes": 731,
+      "sha256": "f70d4086470d5a4b22635789232972254b7e07cd5460995a55253d249a7243ca"
+    },
+    {
+      "path": "src/lib/motion/ticker.ts",
+      "category": "host-reference",
+      "bytes": 4845,
+      "sha256": "eb6d4e782b0d68a3bd88c381714fcbdf22694afc7e7f34972cad1d26d0f46b0e"
+    },
+    {
+      "path": "src/lib/seo.ts",
+      "category": "host-reference",
+      "bytes": 1410,
+      "sha256": "afe4f834b8f26221cc538a4b2f1f1e3bbd2f197189e0174ce97e294a8adc4b2c"
+    },
+    {
+      "path": "src/migrations/20261018_104955_initial_careers.json",
+      "category": "feature-source",
+      "bytes": 29440,
+      "sha256": "0c11305d82bad256f930f10f4fbc8f7af169583f611268f744a2ef15a1f3b2ad"
+    },
+    {
+      "path": "src/migrations/20261018_104955_initial_careers.ts",
+      "category": "feature-source",
+      "bytes": 9476,
+      "sha256": "e394e0ca52d303de260feb8f40a00a9cf7c338dfa5c8a6a0f08e658de7c941b9"
+    },
+    {
+      "path": "src/migrations/index.ts",
+      "category": "feature-source",
+      "bytes": 293,
+      "sha256": "c3b82e959eb5f9d87f0a3e0392b0841f49f2e6506e9fa472a740de5f3e728764"
+    },
+    {
+      "path": "src/payload-types.ts",
+      "category": "feature-source",
+      "bytes": 9717,
+      "sha256": "fd782109b61c8e3cb1cd9468921b8745d6589f5f19844f74dd505aab36026cb9"
+    },
+    {
+      "path": "src/styles/base.css",
+      "category": "host-reference",
+      "bytes": 6156,
+      "sha256": "4f8cd5422ae0bdc9b6455be6faaa1f4774f3b088b0323e9e8404b3f0701b9f8b"
+    },
+    {
+      "path": "src/styles/careers.css",
+      "category": "feature-source",
+      "bytes": 5277,
+      "sha256": "bbcb102dcf59fc330772fa3e5024da6ce8dd4987759b8983ed95521973c84a08"
+    },
+    {
+      "path": "src/styles/home.css",
+      "category": "host-reference",
+      "bytes": 14051,
+      "sha256": "c8e1a6b8fe07524b1f7ca7ab6c65aea57d330b22a344bef81809bddf133268e2"
+    },
+    {
+      "path": "src/styles/hr.css",
+      "category": "feature-source",
+      "bytes": 2683,
+      "sha256": "6e28001fbef3bd398a0486106fe08ee473b6686f0539a2d5e4a02f023ccdef49"
+    },
+    {
+      "path": "src/styles/layout.css",
+      "category": "host-reference",
+      "bytes": 7688,
+      "sha256": "cbd582f6d012c5c28f71fc73942cd30515ae51afa5746958b0bece8cd2a64fe5"
+    },
+    {
+      "path": "src/styles/pages.css",
+      "category": "host-reference",
+      "bytes": 15967,
+      "sha256": "423f5a5d59967997e3c2ee5634d9ca898671a4f0cb1b211938b2fb499d5c184b"
+    },
+    {
+      "path": "src/views/CareersView.tsx",
+      "category": "feature-source",
+      "bytes": 2328,
+      "sha256": "89948b9bbd4424489290530b8b295f50cfcb95a9f0198d508f3446d1d30ae7d5"
+    },
+    {
+      "path": "src/views/JobView.tsx",
+      "category": "feature-source",
+      "bytes": 2033,
+      "sha256": "089ac88ff02ad28e2df307fcefa1be98f59d75907448c935554df84bb1ea8265"
+    },
+    {
+      "path": "src/views/NotFoundView.tsx",
+      "category": "host-reference",
+      "bytes": 560,
+      "sha256": "3753c524b6a02f0028d6a1cdc02cc7e75008879214fb23471a124a8fe7ec725e"
+    },
+    {
+      "path": "src/views/PolicyView.tsx",
+      "category": "host-reference",
+      "bytes": 2457,
+      "sha256": "a86bab355325545d8e6dedc056fbd9d1cce0ef45cdb5b832ba27957074a22383"
+    },
+    {
+      "path": "tsconfig.json",
+      "category": "host-reference",
+      "bytes": 840,
+      "sha256": "1b22fc59b4bb8eb41de6867146b607479cd503c06d93710620a487e4b5d0b64a"
+    }
+  ],
+  "edges": [
+    {
+      "from": "payload.config.ts",
+      "to": "src/cms/Staff.ts"
+    },
+    {
+      "from": "payload.config.ts",
+      "to": "src/cms/Jobs.ts"
+    },
+    {
+      "from": "payload.config.ts",
+      "to": "src/cms/Applications.ts"
+    },
+    {
+      "from": "payload.config.ts",
+      "to": "src/lib/careers/settings.ts"
+    },
+    {
+      "from": "scripts/cleanup-careers-verification.ts",
+      "to": "payload.config.ts"
+    },
+    {
+      "from": "scripts/create-hr-admin.ts",
+      "to": "payload.config.ts"
+    },
+    {
+      "from": "scripts/reset-hr-password.ts",
+      "to": "payload.config.ts"
+    },
+    {
+      "from": "scripts/verify-careers-bootstrap.ts",
+      "to": "payload.config.ts"
+    },
+    {
+      "from": "src/app/(cms)/api/cms/[...slug]/route.ts",
+      "to": "payload.config.ts"
+    },
+    {
+      "from": "src/app/(cms)/hr/[[...segments]]/page.tsx",
+      "to": "payload.config.ts"
+    },
+    {
+      "from": "src/app/(cms)/hr/[[...segments]]/page.tsx",
+      "to": "src/app/(cms)/hr/importMap.ts"
+    },
+    {
+      "from": "src/app/(cms)/hr/importMap.ts",
+      "to": "src/components/hr/HRBrand.tsx"
+    },
+    {
+      "from": "src/app/(cms)/hr/importMap.ts",
+      "to": "src/components/hr/HRBrand.tsx"
+    },
+    {
+      "from": "src/app/(cms)/hr/importMap.ts",
+      "to": "src/components/hr/HROverview.tsx"
+    },
+    {
+      "from": "src/app/(cms)/hr/importMap.ts",
+      "to": "src/components/hr/HRBrand.tsx"
+    },
+    {
+      "from": "src/app/(cms)/hr/importMap.ts",
+      "to": "src/components/hr/HRBrand.tsx"
+    },
+    {
+      "from": "src/app/(cms)/layout.tsx",
+      "to": "payload.config.ts"
+    },
+    {
+      "from": "src/app/(cms)/layout.tsx",
+      "to": "src/styles/hr.css"
+    },
+    {
+      "from": "src/app/(cms)/layout.tsx",
+      "to": "src/app/(cms)/hr/importMap.ts"
+    },
+    {
+      "from": "src/app/(site)/careers/[slug]/page.tsx",
+      "to": "src/lib/careers/queries.ts"
+    },
+    {
+      "from": "src/app/(site)/careers/[slug]/page.tsx",
+      "to": "src/views/JobView.tsx"
+    },
+    {
+      "from": "src/app/(site)/careers/[slug]/page.tsx",
+      "to": "src/lib/seo.ts"
+    },
+    {
+      "from": "src/app/(site)/careers/page.tsx",
+      "to": "src/views/CareersView.tsx"
+    },
+    {
+      "from": "src/app/(site)/careers/page.tsx",
+      "to": "src/lib/careers/queries.ts"
+    },
+    {
+      "from": "src/app/(site)/careers/page.tsx",
+      "to": "src/lib/seo.ts"
+    },
+    {
+      "from": "src/app/(site)/cookie-policy/page.tsx",
+      "to": "src/content/policies.ts"
+    },
+    {
+      "from": "src/app/(site)/cookie-policy/page.tsx",
+      "to": "src/lib/seo.ts"
+    },
+    {
+      "from": "src/app/(site)/cookie-policy/page.tsx",
+      "to": "src/views/PolicyView.tsx"
+    },
+    {
+      "from": "src/app/(site)/layout.tsx",
+      "to": "src/lib/motion/boot.ts"
+    },
+    {
+      "from": "src/app/(site)/layout.tsx",
+      "to": "src/components/layout/SiteShell.tsx"
+    },
+    {
+      "from": "src/app/(site)/layout.tsx",
+      "to": "src/content/site.ts"
+    },
+    {
+      "from": "src/app/(site)/layout.tsx",
+      "to": "src/lib/seo.ts"
+    },
+    {
+      "from": "src/app/(site)/layout.tsx",
+      "to": "src/styles/base.css"
+    },
+    {
+      "from": "src/app/(site)/layout.tsx",
+      "to": "src/styles/layout.css"
+    },
+    {
+      "from": "src/app/(site)/layout.tsx",
+      "to": "src/styles/home.css"
+    },
+    {
+      "from": "src/app/(site)/layout.tsx",
+      "to": "src/styles/pages.css"
+    },
+    {
+      "from": "src/app/(site)/layout.tsx",
+      "to": "src/styles/careers.css"
+    },
+    {
+      "from": "src/app/(site)/not-found.tsx",
+      "to": "src/views/NotFoundView.tsx"
+    },
+    {
+      "from": "src/app/(site)/privacy-policy/page.tsx",
+      "to": "src/content/policies.ts"
+    },
+    {
+      "from": "src/app/(site)/privacy-policy/page.tsx",
+      "to": "src/lib/seo.ts"
+    },
+    {
+      "from": "src/app/(site)/privacy-policy/page.tsx",
+      "to": "src/views/PolicyView.tsx"
+    },
+    {
+      "from": "src/app/(site)/terms-and-conditions/page.tsx",
+      "to": "src/content/policies.ts"
+    },
+    {
+      "from": "src/app/(site)/terms-and-conditions/page.tsx",
+      "to": "src/lib/seo.ts"
+    },
+    {
+      "from": "src/app/(site)/terms-and-conditions/page.tsx",
+      "to": "src/views/PolicyView.tsx"
+    },
+    {
+      "from": "src/app/api/careers/apply/route.ts",
+      "to": "payload.config.ts"
+    },
+    {
+      "from": "src/app/api/careers/apply/route.ts",
+      "to": "src/lib/careers/validation.ts"
+    },
+    {
+      "from": "src/app/api/careers/apply/route.ts",
+      "to": "src/lib/careers/settings.ts"
+    },
+    {
+      "from": "src/app/api/careers/apply/route.ts",
+      "to": "src/content/policies.ts"
+    },
+    {
+      "from": "src/app/api/careers/export/route.ts",
+      "to": "payload.config.ts"
+    },
+    {
+      "from": "src/app/api/careers/export/route.ts",
+      "to": "src/cms/access.ts"
+    },
+    {
+      "from": "src/app/global-not-found.tsx",
+      "to": "src/app/(site)/layout.tsx"
+    },
+    {
+      "from": "src/app/global-not-found.tsx",
+      "to": "src/views/NotFoundView.tsx"
+    },
+    {
+      "from": "src/app/robots.ts",
+      "to": "src/content/site.ts"
+    },
+    {
+      "from": "src/app/sitemap.ts",
+      "to": "src/content/projects.ts"
+    },
+    {
+      "from": "src/app/sitemap.ts",
+      "to": "src/content/site.ts"
+    },
+    {
+      "from": "src/app/sitemap.ts",
+      "to": "src/content/policies.ts"
+    },
+    {
+      "from": "src/app/sitemap.ts",
+      "to": "src/lib/careers/queries.ts"
+    },
+    {
+      "from": "src/cms/Applications.ts",
+      "to": "src/cms/access.ts"
+    },
+    {
+      "from": "src/cms/Applications.ts",
+      "to": "src/lib/careers/settings.ts"
+    },
+    {
+      "from": "src/cms/Jobs.ts",
+      "to": "src/cms/access.ts"
+    },
+    {
+      "from": "src/cms/Jobs.ts",
+      "to": "src/lib/careers/settings.ts"
+    },
+    {
+      "from": "src/cms/Staff.ts",
+      "to": "src/cms/access.ts"
+    },
+    {
+      "from": "src/components/hr/HRBrand.tsx",
+      "to": "src/content/mark.ts"
+    },
+    {
+      "from": "src/components/hr/HROverview.tsx",
+      "to": "payload.config.ts"
+    },
+    {
+      "from": "src/components/hr/HROverview.tsx",
+      "to": "src/cms/access.ts"
+    },
+    {
+      "from": "src/components/layout/Closing.tsx",
+      "to": "src/content/site.ts"
+    },
+    {
+      "from": "src/components/layout/Closing.tsx",
+      "to": "src/content/policies.ts"
+    },
+    {
+      "from": "src/components/layout/Closing.tsx",
+      "to": "src/components/ui/Button.tsx"
+    },
+    {
+      "from": "src/components/layout/Closing.tsx",
+      "to": "src/components/ui/ClosingMark.tsx"
+    },
+    {
+      "from": "src/components/layout/Closing.tsx",
+      "to": "src/components/ui/Wordmark.tsx"
+    },
+    {
+      "from": "src/components/layout/MotionProvider.tsx",
+      "to": "src/lib/motion/boot.ts"
+    },
+    {
+      "from": "src/components/layout/Nav.tsx",
+      "to": "src/content/site.ts"
+    },
+    {
+      "from": "src/components/layout/Nav.tsx",
+      "to": "src/components/ui/Wordmark.tsx"
+    },
+    {
+      "from": "src/components/layout/Nav.tsx",
+      "to": "src/lib/motion/ticker.ts"
+    },
+    {
+      "from": "src/components/layout/SiteShell.tsx",
+      "to": "src/components/layout/MotionProvider.tsx"
+    },
+    {
+      "from": "src/components/layout/SiteShell.tsx",
+      "to": "src/components/layout/Nav.tsx"
+    },
+    {
+      "from": "src/components/layout/SiteShell.tsx",
+      "to": "src/components/ui/SvgDefs.tsx"
+    },
+    {
+      "from": "src/components/ui/ClosingMark.tsx",
+      "to": "src/content/mark.ts"
+    },
+    {
+      "from": "src/components/ui/ClosingMark.tsx",
+      "to": "src/lib/motion/math.ts"
+    },
+    {
+      "from": "src/components/ui/ClosingMark.tsx",
+      "to": "src/lib/motion/ticker.ts"
+    },
+    {
+      "from": "src/components/ui/ClosingMark.tsx",
+      "to": "src/components/layout/MotionProvider.tsx"
+    },
+    {
+      "from": "src/components/ui/MarkPiece.tsx",
+      "to": "src/content/mark.ts"
+    },
+    {
+      "from": "src/components/ui/PageHero.tsx",
+      "to": "src/components/ui/MarkPiece.tsx"
+    },
+    {
+      "from": "src/components/ui/SvgDefs.tsx",
+      "to": "src/content/mark.ts"
+    },
+    {
+      "from": "src/components/ui/Wordmark.tsx",
+      "to": "src/content/mark.ts"
+    },
+    {
+      "from": "src/content/policies.ts",
+      "to": "src/content/site.ts"
+    },
+    {
+      "from": "src/content/policies.ts",
+      "to": "src/lib/motion/boot.ts"
+    },
+    {
+      "from": "src/lib/careers/queries.ts",
+      "to": "payload.config.ts"
+    },
+    {
+      "from": "src/lib/careers/validation.ts",
+      "to": "src/lib/careers/settings.ts"
+    },
+    {
+      "from": "src/lib/motion/ticker.ts",
+      "to": "src/lib/motion/math.ts"
+    },
+    {
+      "from": "src/lib/seo.ts",
+      "to": "src/content/site.ts"
+    },
+    {
+      "from": "src/migrations/index.ts",
+      "to": "src/migrations/20261018_104955_initial_careers.ts"
+    },
+    {
+      "from": "src/views/CareersView.tsx",
+      "to": "src/payload-types.ts"
+    },
+    {
+      "from": "src/views/CareersView.tsx",
+      "to": "src/components/ui/PageHero.tsx"
+    },
+    {
+      "from": "src/views/CareersView.tsx",
+      "to": "src/components/layout/Closing.tsx"
+    },
+    {
+      "from": "src/views/CareersView.tsx",
+      "to": "src/lib/careers/labels.ts"
+    },
+    {
+      "from": "src/views/JobView.tsx",
+      "to": "src/payload-types.ts"
+    },
+    {
+      "from": "src/views/JobView.tsx",
+      "to": "src/components/layout/Closing.tsx"
+    },
+    {
+      "from": "src/views/JobView.tsx",
+      "to": "src/components/careers/ApplicationForm.tsx"
+    },
+    {
+      "from": "src/views/JobView.tsx",
+      "to": "src/lib/careers/labels.ts"
+    },
+    {
+      "from": "src/views/NotFoundView.tsx",
+      "to": "src/components/layout/Closing.tsx"
+    },
+    {
+      "from": "src/views/NotFoundView.tsx",
+      "to": "src/components/ui/Button.tsx"
+    },
+    {
+      "from": "src/views/NotFoundView.tsx",
+      "to": "src/components/ui/PageHero.tsx"
+    },
+    {
+      "from": "src/views/PolicyView.tsx",
+      "to": "src/components/layout/Closing.tsx"
+    },
+    {
+      "from": "src/views/PolicyView.tsx",
+      "to": "src/components/ui/PageHero.tsx"
+    },
+    {
+      "from": "src/views/PolicyView.tsx",
+      "to": "src/content/policies.ts"
+    },
+    {
+      "from": "src/views/PolicyView.tsx",
+      "to": "src/content/site.ts"
+    }
+  ],
+  "externallyChangedHostReferences": [
+    {
+      "path": "src/components/layout/Nav.tsx",
+      "category": "host-reference"
+    },
+    {
+      "path": "src/components/ui/ClosingMark.tsx",
+      "category": "host-reference"
+    },
+    {
+      "path": "src/lib/motion/ticker.ts",
+      "category": "host-reference"
+    },
+    {
+      "path": "src/styles/home.css",
+      "category": "host-reference"
+    }
+  ]
+}

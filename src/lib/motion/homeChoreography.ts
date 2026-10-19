@@ -117,12 +117,15 @@ export function initHome(root: HTMLElement): () => void {
 
   let isSmall = false;
   let scatter: number[][] = [];
-  const M = { exitLeft: 0, exitRight: 0, heroH: 0, marks: [] as number[], gap: 0 };
+  /** stickH: height of the pinned hero frame. On phones it is the full screen with the browser bar hidden, a little
+   *  taller than the H the other scenes use, so the navy flood reaches the bottom edge once the bar slides away */
+  const M = { exitLeft: 0, exitRight: 0, heroH: 0, stickH: 0, marks: [] as number[], gap: 0 };
   let heroNav = '';
 
-  /* pointer: the hero pieces lean toward the cursor */
+  /* pointer: the hero pieces lean toward a mouse cursor. A finger only touches down to scroll, so it is ignored */
   let mx = 0, my = 0, pmx = 0, pmy = 0;
   const onPointer = (e: PointerEvent) => {
+    if (e.pointerType !== 'mouse') return;
     mx = (e.clientX / window.innerWidth) * 2 - 1;
     my = (e.clientY / window.innerHeight) * 2 - 1;
   };
@@ -130,8 +133,10 @@ export function initHome(root: HTMLElement): () => void {
 
   const readyTimer = window.setTimeout(() => el.headline.classList.add('ready'), 1500);
 
-  const measure = ({ W, H }: Frame) => {
+  const measure = ({ W, H: screenH }: Frame) => {
     isSmall = small.matches;
+    // the hero is laid out in its own frame (see M.stickH)
+    const H = (M.stickH = el.heroStick.offsetHeight || screenH);
     el.svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
 
     // where the headline text really is on this screen, ignoring the transforms the scroll puts on it
@@ -170,13 +175,14 @@ export function initHome(root: HTMLElement): () => void {
     M.gap = el.gap.offsetHeight;
   };
 
-  const frame = ({ y, sy, t, W, H }: Frame) => {
+  const frame = ({ y, sy, t, W, H: screenH }: Frame) => {
     pmx = lerp(pmx, mx, 0.06);
     pmy = lerp(pmy, my, 0.06);
+
+    /* ---- 1. hero, in its own frame ---- */
+    const H = M.stickH || screenH;
     const S = Math.min(W, H);
     const S0 = S * (isSmall ? 0.5 : 0.44);
-
-    /* ---- 1. hero ---- */
     const span = Math.max(1, M.heroH - H);
     const hp = clamp(sy / span);
     const hpReal = clamp(y / span);
@@ -218,12 +224,12 @@ export function initHome(root: HTMLElement): () => void {
     if (hn !== heroNav) el.heroStick.dataset.nav = heroNav = hn;
 
     /* ---- 2. services cards. How far each card has risen, 0 to 1 ---- */
-    const e = M.marks.map((m) => clamp((sy - (m - H)) / H));
+    const e = M.marks.map((m) => clamp((sy - (m - screenH)) / screenH));
     el.sheets.forEach((s, k) => {
       const ek = e[k] ?? 0;
       const ck = e[k + 1] ?? 0;
       if (ek <= 0 && s._e === 0) return;
-      const hk = clamp((sy - M.marks[k]) / (M.gap + H));
+      const hk = clamp((sy - M.marks[k]) / (M.gap + screenH));
       if (s._e !== ek) {
         s.style.setProperty('--e', easeOut(ek).toFixed(4));
         s._e = ek;

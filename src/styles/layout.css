@@ -28,17 +28,30 @@
 /* ---------- closing: call to action, footer and the oversized wordmark ---------- */
 .closing { position: relative; z-index: 1; border-radius: var(--rad) var(--rad) 0 0; margin-top: calc(var(--rad) * -1); background: var(--deep); color: var(--paper); padding: calc(var(--nh) + 6svh) var(--pad) 0; overflow: hidden; min-height: 100svh; display: flex; flex-direction: column; }
 .stack .closing { margin-top: 0; }
-.closing--footer { min-height: 0; padding-top: clamp(40px, 6vw, 72px); }
-.closing h2 { position: relative; font-size: min(15.4vw, 30svh); }
+.closing--footer { min-height: 0; padding-top: 0; }
+.closing-cta h2 { position: relative; font-size: min(15.4vw, 30svh); }
 .closing .cm { display: inline-block; width: 0.8em; height: 0.8em; vertical-align: -0.07em; margin-left: 0.1em; overflow: visible; }
 .closing .go { position: relative; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 48px; padding-block: 4svh 8svh; }
 .closing .go p { font-size: clamp(18px, 1.8vw, 26px); font-weight: 500; line-height: 1.35; max-width: 22em; letter-spacing: -0.012em; }
-.foot { position: relative; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 14px 48px; padding-block: 22px; border-top: 1px solid rgba(255, 255, 249, 0.22); font-size: 15px; font-weight: 500; margin-top: auto; }
-.foot ul, .foot address { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+.foot { position: relative; isolation: isolate; overflow: hidden; background: var(--ink); margin-inline: calc(var(--pad) * -1); margin-top: auto; padding: clamp(44px, 5vw, 72px) var(--pad) 0; border-top: 1px solid rgba(255, 255, 249, 0.22); font-size: 15px; --n1: var(--paper); --n2: var(--red); }
+.foot-main { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 0.7fr) minmax(0, 1fr) minmax(0, 1.1fr); gap: 32px; padding-bottom: clamp(36px, 4vw, 56px); }
+.foot-logo { display: inline-block; width: 136px; }
+.foot-logo svg { display: block; width: 100%; height: auto; }
+.foot-brand p { max-width: 30ch; margin-top: 16px; font-size: 14px; line-height: 1.7; color: rgba(255, 255, 249, 0.74); }
+.foot h2 { font-size: 15px; line-height: 1.4; font-weight: 600; margin-bottom: 16px; }
+.foot-nav ul, .foot-contact address { display: grid; justify-items: start; }
+.foot-nav a, .foot-contact a { display: inline-flex; align-items: center; min-height: 40px; padding-block: 6px; line-height: 1.5; color: rgba(255, 255, 249, 0.8); }
+.foot-contact { min-width: 0; }
+.foot-contact a { overflow-wrap: anywhere; max-width: 100%; }
+.foot-contact address span { padding-block: 8px; color: rgba(255, 255, 249, 0.8); }
 .foot a { transition: color 0.2s; }
 .foot a:hover { color: var(--orange); }
-.foot .legal { opacity: 0.62; }
-.closing .wm { display: block; width: 100%; height: auto; margin-top: 3svh; margin-bottom: -7.5vw; overflow: visible; --n1: var(--paper); --n2: var(--red); }
+.foot-bottom { position: relative; z-index: 1; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; padding-block: 18px calc(18px + var(--rmbar, 0px)); border-top: 1px solid rgba(255, 255, 249, 0.22); }
+.foot .legal { color: rgba(255, 255, 249, 0.7); font-size: 13px; }
+.foot .slogan { font-size: 24px; line-height: 1; letter-spacing: 0.02em; }
+.foot .slogan b { font-weight: 400; color: var(--red); }
+.foot-top { display: inline-flex; align-items: center; gap: 10px; min-height: 40px; font-size: 13px; }
+.foot .wm { position: absolute; z-index: 0; pointer-events: none; display: block; width: min(68vw, 900px); height: auto; right: -3vw; bottom: -22%; opacity: 0.055; }
 
 /* ---------- bar shown when the device asks for reduced motion ---------- */
 .rmbar { position: fixed; z-index: 80; left: 0; right: 0; bottom: 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px 20px; padding: 14px var(--pad) calc(14px + env(safe-area-inset-bottom, 0px)); background: var(--deep); color: var(--paper); font-size: 15px; font-weight: 500; border-top: 2px solid var(--orange); }
@@ -46,9 +59,24 @@
 .rmbar button:hover { background: var(--paper); }
 
 @media (max-width: 820px) {
+  .foot-main { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 24px; }
+  .foot-brand, .foot-contact { grid-column: span 2; }
+  .foot-brand p { max-width: 40ch; }
+  .foot-nav a, .foot-contact a, .foot-top { min-height: 44px; }
+  .foot-bottom { align-items: flex-start; gap: 16px 24px; padding-block: 24px calc(24px + var(--rmbar, 0px)); }
+  .foot .legal { flex-basis: 100%; order: 1; }
+  .foot .wm { width: 110%; right: -16%; bottom: -4%; }
   .rmbar { flex-wrap: nowrap; justify-content: space-between; gap: 14px; font-size: 13px; line-height: 1.35; padding-block: 10px calc(10px + env(safe-area-inset-bottom, 0px)); }
   .rmbar button { flex: none; font-size: 13px; padding: 10px 14px; }
   .nav .links, .nav .cta { display: none; }
   .nav .mn { display: block; }
   .nav .brand svg { height: 28px; }
+}
+
+@media (min-width: 601px) and (max-width: 1100px) {
+  .foot-main { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .foot-brand { grid-column: 1 / -1; display: flex; align-items: center; gap: 32px; }
+  .foot-logo { flex: none; }
+  .foot-brand p { max-width: 48ch; margin-top: 0; }
+  .foot-contact { grid-column: auto; }
 }

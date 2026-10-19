@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-19",
+  "dataMutations": "None; staff session created and signed out if login succeeded.",
+  "checks": [
+    {
+      "path": "/careers",
+      "status": 200,
+      "cacheControl": "no-store",
+      "careersContent": true
+    },
+    {
+      "path": "/hr",
+      "status": 200,
+      "cacheControl": "no-store"
+    },
+    {
+      "path": "/hr/login",
+      "status": 200,
+      "cacheControl": "no-store"
+    },
+    {
+      "path": "/api/cms/jobs",
+      "status": 200,
+      "cacheControl": "private, no-store",
+      "publicJobsOpenOnly": true
+    },
+    {
+      "path": "/api/cms/applications",
+      "status": 403,
+      "cacheControl": "private, no-store"
+    },
+    {
+      "path": "/api/careers/export",
+      "status": 401,
+      "cacheControl": "no-store"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate"
+    },
+    {
+      "path": "/api/cms/staff/login",
+      "status": 200,
+      "authenticatedAsStaff": true
+    },
+    {
+      "path": "/hr (authenticated)",
+      "status": 200,
+      "overview": false,
+      "csvLink": false,
+      "createJobLink": false
+    },
+    {
+      "path": "/api/cms/staff/logout",
+      "status": 200
+    }
+  ]
+}

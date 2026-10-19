@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-19",
+  "scope": "Read-only business data inspection; authentication sessions created and signed out. No jobs, applicants, or CVs created, updated, exported to disk, or deleted.",
+  "clientNote": "Payload cookie authentication requires allowed Origin or browser Sec-Fetch-Site headers. Initial bare Node-cookie probes omitted these; final checks supply Origin.",
+  "checks": [
+    {
+      "name": "Public jobs API returns open roles only",
+      "passed": true
+    },
+    {
+      "name": "Public Careers page responds",
+      "passed": true
+    },
+    {
+      "name": "Anonymous applicant access denied",
+      "passed": true
+    },
+    {
+      "name": "Anonymous CSV export denied",
+      "passed": true
+    },
+    {
+      "name": "Existing administrator can sign in",
+      "passed": true
+    },
+    {
+      "name": "Staff session recognized with allowed Origin",
+      "passed": true
+    },
+    {
+      "name": "Authenticated HR dashboard renders overview",
+      "passed": true
+    },
+    {
+      "name": "HR overview exposes create-job and CSV actions",
+      "passed": true
+    },
+    {
+      "name": "Authenticated applicant listing permitted",
+      "passed": true
+    },
+    {
+      "name": "Applicant API is not cacheable",
+      "passed": true
+    },
+    {
+      "name": "Authenticated CSV export has expected headers",
+      "passed": true
+    },
+    {
+      "name": "CSV is a private attachment",
+      "passed": true
+    },
+    {
+      "name": "Robots excludes HR and API routes",
+      "passed": true
+    },
+    {
+      "name": "Signed out of inspection session",
+      "passed": true
+    },
+    {
+      "name": "Signed-out session cannot read applicants",
+      "passed": true
+    }
+  ]
+}

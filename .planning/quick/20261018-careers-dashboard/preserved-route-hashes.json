@@ -1,0 +1,46 @@
+﻿[
+    {
+        "route":  "about\\page.tsx",
+        "sha256":  "FE83EAC81AC092403B1615BA11DFF3306B5731491347458E8C114125C647E430"
+    },
+    {
+        "route":  "contact\\page.tsx",
+        "sha256":  "0C1118F43A6A628DB96B90C83F5B018AE059D2C122C89725966E1497FBE9F38D"
+    },
+    {
+        "route":  "cookie-policy\\page.tsx",
+        "sha256":  "20864A716F02C7E90BE99C76296C5C3A14025F8A37E2FD4308FCB60B55C9F221"
+    },
+    {
+        "route":  "privacy-policy\\page.tsx",
+        "sha256":  "0256708223F87BCFB0F4547A4FF01BC1AF8E6A876255C0C915770AE5513C4671"
+    },
+    {
+        "route":  "services\\page.tsx",
+        "sha256":  "9C8C3B3400F93E9340CB90C6AA9411DBD6F62C18E6A288C214A410760CFA8C04"
+    },
+    {
+        "route":  "terms-and-conditions\\page.tsx",
+        "sha256":  "6FCF1FC7C6C63DF0B2AAAB8B4351567EBE25762871E054E8E1433BFEC445A89D"
+    },
+    {
+        "route":  "work\\page.tsx",
+        "sha256":  "75FAD4130AE19D5DA3BCEDF71B234309FD1B8957729FCA7B7B337EB313F5B2FD"
+    },
+    {
+        "route":  "work\\[slug]\\page.tsx",
+        "sha256":  "3695C52248F3AC144DE37C6DD27EB1001AEC459EBB509C45AAA1B3AC71740DF4"
+    },
+    {
+        "route":  "layout.tsx",
+        "sha256":  "20367CB756C3C3774B5E31DEA5AE283D788AC5CE915665871930A0E6A7A81822"
+    },
+    {
+        "route":  "not-found.tsx",
+        "sha256":  "ECFFE7201E1722C32C4392F276DF790FFC9DEF726D821980F25DCA7523FE3E7E"
+    },
+    {
+        "route":  "page.tsx",
+        "sha256":  "33E5A7765F8598930B4DA590EFD2E868908AB3792538E26EC45EAE3E3FA504EA"
+    }
+]

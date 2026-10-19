@@ -35,7 +35,7 @@ export function Hero() {
           </g>
         </svg>
         <p className="eq disp" aria-hidden="true">
-          {hero.equation[0]} <b>+</b> {hero.equation[1]} <b>=</b> {hero.equation[2]}
+          Partner in every <b>Part</b>
         </p>
         <div className="flood" />
       </div>

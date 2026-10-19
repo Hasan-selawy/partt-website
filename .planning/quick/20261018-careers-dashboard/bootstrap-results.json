@@ -1,0 +1,5 @@
+{
+  "productionMigration": "passed on fresh isolated database",
+  "publicFirstUserOnEmptyDatabase": "denied",
+  "privilegedLocalBootstrap": "passed"
+}

@@ -19,10 +19,18 @@ export function ClosingMark({ className, light = true }: { className?: string; l
     const group = svg.querySelector<SVGGElement>('.cmg');
     const parts = Array.from(svg.querySelectorAll<SVGGElement>('.cmg > g'));
     if (!group) return;
+    let rect: DOMRect | null = null;
+    let drawn = NaN;
     return subscribe({
+      // read before any scene writes, so measuring never forces the browser to recalculate styles mid-frame
+      read: () => {
+        rect = svg.getBoundingClientRect();
+      },
       frame: ({ H }) => {
-        const rect = svg.getBoundingClientRect();
+        // redraw only when the mark has moved, so a still page repaints nothing
+        if (!rect || rect.top === drawn) return;
         if (rect.top > H * 1.4 || rect.bottom < -H * 0.4) return;
+        drawn = rect.top;
         // 0 while the mark is still below the screen, 1 once it has risen a third of the way up
         const q = easeOut(clamp((H * 1.05 - rect.top) / (H * 0.75)));
         parts.forEach((g, i) => {

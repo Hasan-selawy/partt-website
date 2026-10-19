@@ -1,11 +1,14 @@
 /**
  * One animation loop for the whole site.
  *
- * Scenes subscribe with a `measure` function (read layout, runs on load and on real size changes) and a
- * `frame` function (write transforms, runs every animation frame). The loop starts with the first
- * subscriber and stops with the last, so navigating away from a page leaves nothing running.
+ * Scenes subscribe with a `measure` function (read layout, runs on load and on real size changes), an optional
+ * `read` function (read layout every frame, before any scene writes, so the browser never has to recalculate
+ * styles mid-frame) and a `frame` function (write transforms, runs every animation frame). The loop starts with
+ * the first subscriber and stops with the last, so navigating away from a page leaves nothing running.
  *
- * `sy` is the scroll position eased toward the real one, which is what gives pinned scenes their weight.
+ * `sy` is the scroll position eased toward the real one, which is what gives pinned scenes their weight under a
+ * mouse wheel. A finger already scrolls smoothly, so on touch `sy` follows the page exactly: anything eased on
+ * top of that trails the finger and keeps drifting after it stops.
  */
 
 import { lerp } from './math';
@@ -28,7 +31,8 @@ export type Frame = {
 
 export type Scene = {
   measure?: (f: Frame) => void;
-  frame: (f: Frame) => void;
+  read?: (f: Frame) => void;
+  frame?: (f: Frame) => void;
 };
 
 /** Small layout, matching the CSS breakpoint. */
@@ -44,6 +48,14 @@ let start = 0;
 let lastY = 0;
 let probe: HTMLDivElement | null = null;
 let listening = false;
+/** whether the last scroll came from a wheel (eased) or a finger (followed exactly) */
+let eased = true;
+const onTouch = () => {
+  eased = false;
+};
+const onWheel = () => {
+  eased = true;
+};
 
 const viewportHeight = () => {
   if (!probe) {
@@ -84,12 +96,14 @@ const tick = (now: number) => {
   f.dt = dt;
   f.t = (now - start) / 1000;
   f.y = y;
-  f.sy += (y - f.sy) * (1 - Math.pow(0.86, dt / 16.7));
+  f.sy = eased ? f.sy + (y - f.sy) * (1 - Math.pow(0.86, dt / 16.7)) : y;
   if (Math.abs(y - f.sy) < 0.05) f.sy = y;
   f.vel = lerp(f.vel, ((y - lastY) / dt) * 16.7, 0.18);
   lastY = y;
-  scenes.forEach((s) => s.frame(f));
-  raf = requestAnimationFrame(tick);
+  scenes.forEach((s) => s.read?.(f));
+  scenes.forEach((s) => s.frame?.(f));
+  // a scene may unsubscribe itself during the frame; once none are left the loop stops here
+  raf = scenes.size ? requestAnimationFrame(tick) : 0;
 };
 
 export function subscribe(scene: Scene): () => void {
@@ -100,6 +114,9 @@ export function subscribe(scene: Scene): () => void {
     f.vel = 0;
     raf = requestAnimationFrame(tick);
     if (!listening) {
+      eased = !window.matchMedia('(pointer: coarse)').matches;
+      window.addEventListener('touchstart', onTouch, { passive: true });
+      window.addEventListener('wheel', onWheel, { passive: true });
       window.addEventListener('resize', onResize);
       window.addEventListener('orientationchange', onResize);
       window.addEventListener('load', remeasure);
@@ -115,6 +132,8 @@ export function subscribe(scene: Scene): () => void {
     if (!scenes.size) {
       cancelAnimationFrame(raf);
       cancelAnimationFrame(resizeRaf);
+      window.removeEventListener('touchstart', onTouch);
+      window.removeEventListener('wheel', onWheel);
       window.removeEventListener('resize', onResize);
       window.removeEventListener('orientationchange', onResize);
       window.removeEventListener('load', remeasure);

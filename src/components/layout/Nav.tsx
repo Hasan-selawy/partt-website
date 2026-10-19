@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 import { mainNav, primaryCta } from '@/content/site';
 import { Wordmark } from '@/components/ui/Wordmark';
+import { subscribe } from '@/lib/motion/ticker';
 
 /**
  * Colours the nav takes over each ground: [text and "par", the "tt" accent, text on the button].
@@ -39,7 +40,7 @@ export function Nav() {
   useEffect(() => {
     const nav = navRef.current;
     if (!nav) return;
-    let raf = 0;
+    let unsubscribe: (() => void) | null = null;
     let until = 0;
     let theme = '';
     let ground = '';
@@ -78,14 +79,21 @@ export function Nav() {
         nav.style.setProperty('--n0', bg);
       }
     };
-    // keep checking for a moment after the last scroll, because pinned scenes ease to a stop
-    const loop = () => {
-      apply();
-      raf = performance.now() < until ? requestAnimationFrame(loop) : 0;
+    // keep checking for a moment after the last scroll, because pinned scenes ease to a stop. The check runs in the
+    // shared loop's read step, before the scroll scenes write, so it never makes the browser recalculate styles mid-frame
+    const check = {
+      read: () => {
+        apply();
+        if (performance.now() > until) stop();
+      },
+    };
+    const stop = () => {
+      unsubscribe?.();
+      unsubscribe = null;
     };
     const kick = () => {
       until = performance.now() + 1200;
-      if (!raf) raf = requestAnimationFrame(loop);
+      if (!unsubscribe) unsubscribe = subscribe(check);
     };
     const onScroll = () => {
       const y = window.scrollY;
@@ -102,7 +110,7 @@ export function Nav() {
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', kick);
     return () => {
-      cancelAnimationFrame(raf);
+      stop();
       window.removeEventListener('scroll', onScroll);
       window.removeEventListener('resize', kick);
     };

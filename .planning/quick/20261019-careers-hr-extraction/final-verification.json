@@ -1,0 +1,10 @@
+{
+  "zipEntries": 81,
+  "payloadHashesVerified": 80,
+  "localImportEdgesVerified": 107,
+  "markdownLinksVerified": 42,
+  "recruitmentSourceFilesUnchanged": 34,
+  "currentHTTPChecksPassed": 15,
+  "archiveCRC": "passed",
+  "documentationMatchesWorkspace": true
+}

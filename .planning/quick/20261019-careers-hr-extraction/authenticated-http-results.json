@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-19",
+  "checks": [
+    {
+      "path": "/api/cms/staff/me",
+      "status": 200,
+      "isStaff": false,
+      "isAdmin": false
+    },
+    {
+      "path": "/api/cms/jobs?limit=1",
+      "status": 200,
+      "totalDocs": 1
+    },
+    {
+      "path": "/api/cms/applications?limit=1",
+      "status": 403
+    },
+    {
+      "path": "/api/careers/export",
+      "status": 401,
+      "csvHeader": "{\"error\":\"Sign in to HR first.\"}"
+    },
+    {
+      "path": "/hr",
+      "status": 200,
+      "htmlTitle": "Dashboard  | partt HR",
+      "loginCopy": false,
+      "dashboardCopy": false,
+      "redirectToLogin": true,
+      "length": 50789
+    },
+    {
+      "logoutStatus": 200
+    }
+  ]
+}

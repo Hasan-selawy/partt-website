@@ -7,6 +7,8 @@ export const site = {
   legalName: 'partt agency',
   /** CONFIRM: the live domain. Used for canonical links, the sitemap and share previews. */
   url: 'https://www.parttagency.com',
+  /** The slogan. Written "Partner in every Part" wherever it appears; the last word takes the accent. */
+  slogan: 'Partner in every Part',
   tagline: 'Strategic marketing agency',
   description:
     'partt is a strategic marketing agency built on true partnership. We work as part of your team, from strategy and brand to execution and growth.',

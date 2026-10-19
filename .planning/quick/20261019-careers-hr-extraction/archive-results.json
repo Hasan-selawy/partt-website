@@ -1,0 +1,14 @@
+{
+  "archive": "exports/careers-hr.zip",
+  "entries": 81,
+  "originalSources": 74,
+  "featureFiles": 34,
+  "hostReferences": 40,
+  "resolvedImports": 107,
+  "sizeBytes": 164051,
+  "sha256": "79b2974530b37d1e22095617839136e2f5150aad8cd26a7cbf4ee123cec7fe5b",
+  "sourceHashesMatchSnapshot": true,
+  "featureSourceUnchangedSinceInitialScan": true,
+  "knownLocalSecretsAbsent": true,
+  "zipCRCAndEntryHashes": "passed"
+}

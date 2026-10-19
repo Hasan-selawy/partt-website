@@ -24,12 +24,15 @@ export function Statement() {
       </h2>
       <ClosingMark className="say-mark" />
       <div className="say-sub">
-        <p>
-          <Accented text={statement.sub} />
+        <p className="say-lead">
+          <Accented text={statement.lead} />
         </p>
-        <Link className="tlink" href="/about">
-          About partt <i aria-hidden="true">→</i>
-        </Link>
+        <div className="say-rest">
+          <p>{statement.rest}</p>
+          <Link className="tlink" href="/about">
+            About partt <i aria-hidden="true">→</i>
+          </Link>
+        </div>
       </div>
     </section>
   );
