@@ -1,6 +1,6 @@
 # Porting the Careers and HR module
 
-This guide accompanies [the complete feature specification](../specs/partt_careers_hr_reverse_spec.md) and `exports/careers-hr.zip`. It extracts the current implementation for use in another project. No change to the running app's behavior is required.
+This guide accompanies [the complete feature specification](../specs/partt_careers_hr_reverse_spec.md) and [the source archive](../exports/careers-hr.zip). Careers and HR were removed from Partt on 19 October 2026. All source paths and implementation details below describe the archived module for reuse in another project, not the active Partt website. Start with `ARCHIVE-README.md` and `SOURCE-MANIFEST.json` inside the ZIP for its current inventory.
 
 ## What is in the ZIP
 

@@ -46,7 +46,6 @@ export function Closing({ mode = 'cta' }: { mode?: 'cta' | 'footer' }) {
                   <Link href={item.href}>{item.label}</Link>
                 </li>
               ))}
-              <li><Link href="/careers">Careers</Link></li>
             </ul>
           </nav>
           <nav className="foot-nav policy-links" aria-labelledby="footer-resources-title">

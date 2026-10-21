@@ -22,7 +22,7 @@ The user confirmed `info@parttagency.com` as the address to use for now. It is u
 
 ## Recruitment implementation update
 
-The source audit above describes the website before recruitment was added. The Careers/HR implementation now stores applications and PDF CVs privately, creates staff accounts, and sets an essential `payload-token` staff cookie. Privacy, Cookie, and Terms content has been updated accordingly. No analytics or advertising tracking was added. See `docs/hr-dashboard.md` for the implemented storage, access controls, cookie lifetime, and deletion workflow. Hosting/provider identity, processing locations, and a fixed recruitment-retention period still need owner confirmation before publication.
+Careers/HR was added after the initial audit, then removed from Partt on 19 October 2026 at the user's request. Privacy, Cookie, and Terms content now describes the website without recruitment submissions, staff accounts, or HR cookies. The original module and its operating guide are preserved in `exports/careers-hr.zip` for reuse elsewhere. Private local recruitment records and credentials were retained, not deleted or included in the source archive. The remaining hosting/provider and inquiry-retention confirmations below still apply.
 
 ## Basis for privacy wording
 

@@ -9,7 +9,6 @@ import '@/styles/base.css';
 import '@/styles/layout.css';
 import '@/styles/home.css';
 import '@/styles/pages.css';
-import '@/styles/careers.css';
 
 // both brand fonts are downloaded at build time and served from this site: no layout shift, no third-party request
 const display = Bebas_Neue({ weight: '400', subsets: ['latin'], variable: '--font-disp', display: 'swap' });

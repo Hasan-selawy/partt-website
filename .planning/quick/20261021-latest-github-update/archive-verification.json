@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-21",
+  "archive": "exports/careers-hr.zip",
+  "entries": 84,
+  "payloadHashesVerified": 82,
+  "sha256": "92a7d0adf48cb78d0a2562936f1cea7ae0abed2818344d997158f0178e6ee811",
+  "crc": "pass",
+  "privateRuntimeAndKnownCredentialsExcluded": true,
+  "repository": "Hasan-selawy/partt-website",
+  "visibility": "public"
+}

@@ -1,5 +1,7 @@
 # Partt Careers & HR
 
+Archived module guide: Careers and HR were removed from Partt on 19 October 2026. The routes and setup commands below apply to the original source in [the reuse archive](../exports/careers-hr.zip), not this website. Follow [the porting guide](careers-hr-porting-guide.md) when integrating it elsewhere.
+
 ## Open it locally
 
 - Public Careers: http://localhost:3000/careers

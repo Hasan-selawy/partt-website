@@ -1,5 +1,7 @@
 # Careers management — accepted approach
 
+Archived decision history: Careers and HR were removed from Partt on 19 October 2026. The original implementation is preserved in [the reuse archive](../exports/careers-hr.zip) for integration with another system.
+
 **Update, 18 October 2026:** The user approved the full HR dashboard. Website job publishing, private applications/CVs, staff authentication, review statuses, and export are implemented. See [the HR guide](hr-dashboard.md) and [architecture decision](careers-dashboard-architecture.md). The discovery discussion below is retained as the decision history; the operational guide supersedes its open implementation questions.
 
 ## User intent

@@ -1,0 +1,141 @@
+{
+  "origin": "http://127.0.0.1:3100",
+  "checks": 30,
+  "results": [
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "publicPages": 16
+    },
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/work",
+      "status": 200
+    },
+    {
+      "path": "/services",
+      "status": 200
+    },
+    {
+      "path": "/about",
+      "status": 200
+    },
+    {
+      "path": "/contact",
+      "status": 200
+    },
+    {
+      "path": "/privacy-policy",
+      "status": 200
+    },
+    {
+      "path": "/cookie-policy",
+      "status": 200
+    },
+    {
+      "path": "/terms-and-conditions",
+      "status": 200
+    },
+    {
+      "path": "/work/salt-beach",
+      "status": 200
+    },
+    {
+      "path": "/work/levo",
+      "status": 200
+    },
+    {
+      "path": "/work/incharge",
+      "status": 200
+    },
+    {
+      "path": "/work/dwego",
+      "status": 200
+    },
+    {
+      "path": "/work/dtale",
+      "status": 200
+    },
+    {
+      "path": "/work/dead-sea-tourist-beach",
+      "status": 200
+    },
+    {
+      "path": "/work/olvy",
+      "status": 200
+    },
+    {
+      "path": "/work/dead-sea-corniche",
+      "status": 200
+    },
+    {
+      "path": "/careers",
+      "method": "GET",
+      "status": 404
+    },
+    {
+      "path": "/careers/example-role",
+      "method": "GET",
+      "status": 404
+    },
+    {
+      "path": "/hr",
+      "method": "GET",
+      "status": 404
+    },
+    {
+      "path": "/hr/login",
+      "method": "GET",
+      "status": 404
+    },
+    {
+      "path": "/hr/collections/jobs",
+      "method": "GET",
+      "status": 404
+    },
+    {
+      "path": "/api/careers/apply",
+      "method": "POST",
+      "status": 404
+    },
+    {
+      "path": "/api/careers/export",
+      "method": "GET",
+      "status": 404
+    },
+    {
+      "path": "/api/cms/jobs",
+      "method": "GET",
+      "status": 404
+    },
+    {
+      "path": "/api/cms/applications",
+      "method": "GET",
+      "status": 404
+    },
+    {
+      "path": "/api/cms/staff/login",
+      "method": "POST",
+      "status": 404
+    },
+    {
+      "path": "/api/contact",
+      "method": "POST",
+      "status": 400,
+      "code": "bad_request"
+    },
+    {
+      "path": "/api/contact",
+      "method": "POST",
+      "status": 422,
+      "code": "invalid"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "retiredSourceFilesAbsent": 34,
+  "coreDependencyVersionsUnchanged": [
+    "next",
+    "react",
+    "react-dom",
+    "@types/node",
+    "@types/react",
+    "@types/react-dom",
+    "typescript"
+  ],
+  "payloadAbsentFromLockfile": true,
+  "archiveKnownCredentialScan": "pass",
+  "unrelatedArchivedHostSourcesUnchanged": 26,
+  "privateEnvironmentCredentialsAndRuntimeUnchanged": true
+}

@@ -1,5 +1,7 @@
 # Careers and HR: extracted feature specification
 
+Archive status, 19 October 2026: Careers and HR have been removed from the active Partt website. This specification describes the preserved module in [the source archive](../exports/careers-hr.zip) for reuse in another system.
+
 Extracted on 19 October 2026 from the current working tree of `partt-nextjs`, branch `main`. This describes the implemented recruitment module, including uncommitted source. It is not a specification for a general employee-management system.
 
 Use this document to rebuild the behavior in any stack. For the original Next.js/Payload source and integration steps, see [the porting guide](../docs/careers-hr-porting-guide.md) and `exports/careers-hr.zip`.

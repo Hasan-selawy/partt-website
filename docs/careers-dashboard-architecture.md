@@ -1,5 +1,7 @@
 # Careers dashboard architecture
 
+Archived architecture: Careers and HR were removed from Partt on 19 October 2026. This document describes the original module preserved in [the reuse archive](../exports/careers-hr.zip).
+
 Status: implementation approved by the user on 18 October 2026.
 
 Public Careers pages and application handling run in the existing Next.js app. Payload provides the protected `/hr` dashboard, authenticated staff management, job/application editing, and access-controlled upload delivery. Its SQLite adapter stores records in the private application data directory. CVs are stored alongside it, outside publicly served assets.
