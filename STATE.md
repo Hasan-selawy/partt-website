@@ -51,3 +51,5 @@ Recreate the Partt website from the supplied desktop/mobile concepts and motion 
 [Grok 2026-11-17] Homepage Made together now shows LÉVO, DWEGO, OLVY, and Incharge, in that order. All work opens the full eight-project list. Content parity still checks the imported home copy and asserts this showcase separately. Browser smoke 335 passed, including that order and the All work count. dist rebuilt.
 
 [Grok 2026-11-17] Pushed this static site to https://github.com/Hasan-selawy/partt-website on branch static-site. main was left as the existing Next.js site. The repo stays public. .tools was not committed.
+
+[Grok 2026-11-17] Merged static-site onto main with the static site as the tree. The old Next.js history stays in the merge. Deleted branch static-site. The release tag pre-group-careers-20261019 stays.
