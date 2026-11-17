@@ -1,0 +1,433 @@
+{
+  "source": "C:\\Dev\\partt-nextjs",
+  "files": [
+    {
+      "source": "src/content/projects.ts",
+      "sha256": "15d6915863b1e6261ad1f203ea6d0ff74ad2853a514c8c5108e0e72a20ab2926"
+    },
+    {
+      "source": "src/content/clients.ts",
+      "sha256": "ee89bcbdcc2982d5f5fe6eea49e9e1cd24dbfcc7ebe1f11148e999d077b2f236"
+    },
+    {
+      "source": "src/content/services.ts",
+      "sha256": "eaf4f56721e55c02bef6fe5f1410b0cc6ed0362686a35889e7543d403c31843c"
+    },
+    {
+      "source": "src/content/about.ts",
+      "sha256": "11fef0a35e533ba02dce99281c4c5dd044b36b2afec83e49c974dbd0bc53585f"
+    },
+    {
+      "source": "src/content/home.ts",
+      "sha256": "58848d372d964062ef1e5d29719deba638263cbd8832796c91dfe9709d353506"
+    },
+    {
+      "source": "src/content/site.ts",
+      "sha256": "3a0d01ce4aca7fbd9b29224fdf8bfc05542f9493c31c5059bc3102894889e484"
+    },
+    {
+      "source": "src/content/mark.ts",
+      "sha256": "ea643525614feaf20021391366935ccbdf76c41f0bb3da1b551140bf9898c13c"
+    },
+    {
+      "source": "src/content/policies.ts",
+      "sha256": "18a87306cda0dc64579b407e8ffac30e4408b7c59045e9650c2c538c84bb9424"
+    },
+    {
+      "source": "public/img/logos/l-celatte.png",
+      "destination": "assets/client-media/logos/l-celatte.png",
+      "sha256": "a9b000df81c8c66afe6dee6f7cedf2cd815bda21735942203c17aeaa2ce665d1",
+      "bytes": 46400
+    },
+    {
+      "source": "public/img/logos/l-deadsea.png",
+      "destination": "assets/client-media/logos/l-deadsea.png",
+      "sha256": "bb7d92408bc719d930c7cba9a27ae7a19eda7166eb495bdb18c5683da37c09cd",
+      "bytes": 28953
+    },
+    {
+      "source": "public/img/logos/l-dtale.png",
+      "destination": "assets/client-media/logos/l-dtale.png",
+      "sha256": "912974d8d20e1ad9260d54263d322da6dfb1926b3f82f3052311b18e77989201",
+      "bytes": 4064
+    },
+    {
+      "source": "public/img/logos/l-incharge.png",
+      "destination": "assets/client-media/logos/l-incharge.png",
+      "sha256": "aad20c910151cd16dd9332936783cabe4bc107e8030420fd765be1149e4df70b",
+      "bytes": 18700
+    },
+    {
+      "source": "public/img/logos/l-levo.png",
+      "destination": "assets/client-media/logos/l-levo.png",
+      "sha256": "1c734aeb4bd8276020b95dd29513314200b8387f34424c39108628a0641b392e",
+      "bytes": 19324
+    },
+    {
+      "source": "public/img/logos/l-olvy.png",
+      "destination": "assets/client-media/logos/l-olvy.png",
+      "sha256": "e5d4d22a45814d04582519f2b7c54eda7acd1a3a6b7872911c3ef4bcad1a2dd3",
+      "bytes": 26693
+    },
+    {
+      "source": "public/img/logos/l-saltbeach.png",
+      "destination": "assets/client-media/logos/l-saltbeach.png",
+      "sha256": "d756fa64a72c4342a49293c336bd8d0cbcc7281aaf11dacb0825bddeff089315",
+      "bytes": 19489
+    },
+    {
+      "source": "public/img/work/dead-sea/01.jpg",
+      "destination": "assets/client-media/work/dead-sea/01.jpg",
+      "sha256": "f866fdd7d723b835ec7934665899ef6e1049f3e2cda331acac0dd1c1e877f1d8",
+      "bytes": 407415
+    },
+    {
+      "source": "public/img/work/dead-sea/02.jpg",
+      "destination": "assets/client-media/work/dead-sea/02.jpg",
+      "sha256": "d8a3bfe68f5344ca43b57a0c4a3d108b901ad313496d4c5a9ad91cf173224095",
+      "bytes": 1113742
+    },
+    {
+      "source": "public/img/work/dead-sea/03.jpg",
+      "destination": "assets/client-media/work/dead-sea/03.jpg",
+      "sha256": "26541bd24c4bb5160b7ff41f9a16e52b5521934c3c93b3015ac7c611a072eaf9",
+      "bytes": 950178
+    },
+    {
+      "source": "public/img/work/dead-sea/04.jpg",
+      "destination": "assets/client-media/work/dead-sea/04.jpg",
+      "sha256": "dc023bc78b78ee0100dcd79bc86dc727325bbd150d12f1ce0d8c06b07e0a7e8b",
+      "bytes": 413032
+    },
+    {
+      "source": "public/img/work/dead-sea/05.jpg",
+      "destination": "assets/client-media/work/dead-sea/05.jpg",
+      "sha256": "36e25874a5f2c698b08f62cc2de9eec5f52ee1ea36429be082daddd0967d295b",
+      "bytes": 954974
+    },
+    {
+      "source": "public/img/work/dead-sea/06.jpg",
+      "destination": "assets/client-media/work/dead-sea/06.jpg",
+      "sha256": "01fa2a25f76fbbeb2e7e0d9b34152cdb22e78a6c2f5671902c58300491a8a7fb",
+      "bytes": 336569
+    },
+    {
+      "source": "public/img/work/dead-sea-corniche/01.jpg",
+      "destination": "assets/client-media/work/dead-sea-corniche/01.jpg",
+      "sha256": "f6a25970690c9ffb35fd811461fecacc390370e602009ecf1f068bcdb3a3cf06",
+      "bytes": 319066
+    },
+    {
+      "source": "public/img/work/dead-sea-corniche/02.jpg",
+      "destination": "assets/client-media/work/dead-sea-corniche/02.jpg",
+      "sha256": "34ff53374fc61f71d278d0ff0647468e1cf43027662081516c27dcf93537c80b",
+      "bytes": 1592230
+    },
+    {
+      "source": "public/img/work/dead-sea-corniche/03.jpg",
+      "destination": "assets/client-media/work/dead-sea-corniche/03.jpg",
+      "sha256": "20504818aebbaf2719edaafd03881ed74e2ad13169919b8f96cd5e709425d15f",
+      "bytes": 778450
+    },
+    {
+      "source": "public/img/work/dead-sea-corniche/04.jpg",
+      "destination": "assets/client-media/work/dead-sea-corniche/04.jpg",
+      "sha256": "7960d02c2dec885803a67acaf6b0f98d4166b4cc999aa9627e9dfa64369f67bc",
+      "bytes": 433966
+    },
+    {
+      "source": "public/img/work/dead-sea-corniche/05.jpg",
+      "destination": "assets/client-media/work/dead-sea-corniche/05.jpg",
+      "sha256": "3e1dc961a3a1653051669d38cfa575c3ae7b4dfab927647185b9b4931c4a2e1e",
+      "bytes": 685173
+    },
+    {
+      "source": "public/img/work/dead-sea-corniche/06.jpg",
+      "destination": "assets/client-media/work/dead-sea-corniche/06.jpg",
+      "sha256": "267dd4e490a2e43ac41fb193eb6cad2248cc09c2489f5279ff18e6f256ead5c1",
+      "bytes": 951483
+    },
+    {
+      "source": "public/img/work/dead-sea-corniche/07.jpg",
+      "destination": "assets/client-media/work/dead-sea-corniche/07.jpg",
+      "sha256": "cc101399e3493cb4f2bee76a333ddd95e361ff63600b70e996211a73b0ace579",
+      "bytes": 704486
+    },
+    {
+      "source": "public/img/work/dead-sea-corniche/08.jpg",
+      "destination": "assets/client-media/work/dead-sea-corniche/08.jpg",
+      "sha256": "110d8e0e993c1aec16c4a943e7dd34f0b63743f4d4009ac5b79cced38d6cb1fb",
+      "bytes": 512323
+    },
+    {
+      "source": "public/img/work/dtale/01.jpg",
+      "destination": "assets/client-media/work/dtale/01.jpg",
+      "sha256": "be221a723597d49514139d5c7ee628eb5728d524762795f58d64bb2b22d125d8",
+      "bytes": 18927
+    },
+    {
+      "source": "public/img/work/dtale/02.jpg",
+      "destination": "assets/client-media/work/dtale/02.jpg",
+      "sha256": "f7791fdb87d12f830fe74ab941e0ed9ad5b57009bfdd53adfdbf8d73c13fd8c9",
+      "bytes": 30455
+    },
+    {
+      "source": "public/img/work/dtale/03.jpg",
+      "destination": "assets/client-media/work/dtale/03.jpg",
+      "sha256": "2947e0e0df1f455c10cffcc2ee1ab26b0c97eb7e2dfda4b6c565e3ac51b1d772",
+      "bytes": 83298
+    },
+    {
+      "source": "public/img/work/dtale/store-entrance-20261019.jpg",
+      "destination": "assets/client-media/work/dtale/store-entrance-20261019.jpg",
+      "sha256": "158d129acea73004f8f32050c00499c749b5d2412beaecf776ffb0035745c6dc",
+      "bytes": 86705
+    },
+    {
+      "source": "public/img/work/dtale/store-entrance.jpg",
+      "destination": "assets/client-media/work/dtale/store-entrance.jpg",
+      "sha256": "158d129acea73004f8f32050c00499c749b5d2412beaecf776ffb0035745c6dc",
+      "bytes": 86705
+    },
+    {
+      "source": "public/img/work/dtale/store-front-20261019.jpg",
+      "destination": "assets/client-media/work/dtale/store-front-20261019.jpg",
+      "sha256": "2947e0e0df1f455c10cffcc2ee1ab26b0c97eb7e2dfda4b6c565e3ac51b1d772",
+      "bytes": 83298
+    },
+    {
+      "source": "public/img/work/dwego/01.jpg",
+      "destination": "assets/client-media/work/dwego/01.jpg",
+      "sha256": "e67583bcda2245ca14a4c794cd93c2270b9ea3fff9b6e9acde10f84fd6031167",
+      "bytes": 683251
+    },
+    {
+      "source": "public/img/work/dwego/02.jpg",
+      "destination": "assets/client-media/work/dwego/02.jpg",
+      "sha256": "86fdf48cf6ea5844c42f6bf1af03a8d9d792f4840a927e29c28764b46199b399",
+      "bytes": 381557
+    },
+    {
+      "source": "public/img/work/dwego/03.jpg",
+      "destination": "assets/client-media/work/dwego/03.jpg",
+      "sha256": "9c5c03d420504c3dcfc02da040e5a5021542828b6e96b91f9493a5192794df6a",
+      "bytes": 679299
+    },
+    {
+      "source": "public/img/work/dwego/04.jpg",
+      "destination": "assets/client-media/work/dwego/04.jpg",
+      "sha256": "52aafd7e4b41459dd52b9a122e668c765a9c7023bda40d7bde8734cb1a9e3225",
+      "bytes": 436800
+    },
+    {
+      "source": "public/img/work/dwego/05.jpg",
+      "destination": "assets/client-media/work/dwego/05.jpg",
+      "sha256": "73dd197936c13b24149fc74fb8dba52538a5e5cecb5528f588346433e2defd85",
+      "bytes": 560137
+    },
+    {
+      "source": "public/img/work/dwego/06.jpg",
+      "destination": "assets/client-media/work/dwego/06.jpg",
+      "sha256": "2598054864db76141e615ab6bc89c371ede15507ac1a71b34fde8623fffe5432",
+      "bytes": 626967
+    },
+    {
+      "source": "public/img/work/dwego/movement-campaign.png",
+      "destination": "assets/client-media/work/dwego/movement-campaign.png",
+      "sha256": "851575e8df89f31217b57ca2b1226fc76bb3dc7df28f3f3df4d907cdc9cb76b4",
+      "bytes": 3044452
+    },
+    {
+      "source": "public/img/work/incharge/01.jpg",
+      "destination": "assets/client-media/work/incharge/01.jpg",
+      "sha256": "671dc2468ce3e7b1e028848293be4120c1e4758989e536e65b3e05d41151e5a5",
+      "bytes": 150865
+    },
+    {
+      "source": "public/img/work/incharge/02.jpg",
+      "destination": "assets/client-media/work/incharge/02.jpg",
+      "sha256": "2d0dfb3e8863cf90a68346bafb2fab3fa34085f95cefa06550a758a8db843c6d",
+      "bytes": 200932
+    },
+    {
+      "source": "public/img/work/incharge/03.jpg",
+      "destination": "assets/client-media/work/incharge/03.jpg",
+      "sha256": "d6ad7e6017aff6e2ab0ac3e977dba58933756e4433be898db179e43633c6de4b",
+      "bytes": 257996
+    },
+    {
+      "source": "public/img/work/incharge/04.jpg",
+      "destination": "assets/client-media/work/incharge/04.jpg",
+      "sha256": "0aa9e7d6a9595f777eca0c71df8745bc4f3abca96bbfe4acb22a3f6f063f2702",
+      "bytes": 166026
+    },
+    {
+      "source": "public/img/work/incharge/05.jpg",
+      "destination": "assets/client-media/work/incharge/05.jpg",
+      "sha256": "b4a63c023641c45b977549c9f4862659f4f7176cc3d5cf7515164c5de006cc37",
+      "bytes": 262241
+    },
+    {
+      "source": "public/img/work/incharge/06.jpg",
+      "destination": "assets/client-media/work/incharge/06.jpg",
+      "sha256": "ade2127bbaa7601a361c84ad604528cd858c1f3c1df2d2d8f374d13dbdd22dd7",
+      "bytes": 209217
+    },
+    {
+      "source": "public/img/work/incharge/07.jpg",
+      "destination": "assets/client-media/work/incharge/07.jpg",
+      "sha256": "3c9bffdb500f7d8932600ae9f042648d2fdd9465d0840cd4476f2357f9d70748",
+      "bytes": 169865
+    },
+    {
+      "source": "public/img/work/incharge/concept-fleet-v3.webp",
+      "destination": "assets/client-media/work/incharge/concept-fleet-v3.webp",
+      "sha256": "3bea6da1b67b8556c9403ba883256f9e94f7b6727e0d78082b03e02e9471c604",
+      "bytes": 321746
+    },
+    {
+      "source": "public/img/work/incharge/concept-tool-roll-v3.webp",
+      "destination": "assets/client-media/work/incharge/concept-tool-roll-v3.webp",
+      "sha256": "91c17c2c998e7b062deda1bf070c17e4ca1784163372b92da80f22b2a66b2bf7",
+      "bytes": 758852
+    },
+    {
+      "source": "public/img/work/incharge/concept-workwear-v3.webp",
+      "destination": "assets/client-media/work/incharge/concept-workwear-v3.webp",
+      "sha256": "89d1767d95eb9cc44c25ecbf6ed04f0a3bc2be25845c5dc1dc34b195aa595a63",
+      "bytes": 320582
+    },
+    {
+      "source": "public/img/work/incharge/offices.jpg",
+      "destination": "assets/client-media/work/incharge/offices.jpg",
+      "sha256": "4e5b07f475d0257550686ef745aeff5496e1795ae80babe3f69d3e40a1e56264",
+      "bytes": 237213
+    },
+    {
+      "source": "public/img/work/levo/01.jpg",
+      "destination": "assets/client-media/work/levo/01.jpg",
+      "sha256": "29efe08fbae05c15ea27d11be6a27313b9c062f865339def8fcbc05e9fa584d9",
+      "bytes": 103383
+    },
+    {
+      "source": "public/img/work/levo/02.jpg",
+      "destination": "assets/client-media/work/levo/02.jpg",
+      "sha256": "8f79739e16d8f8e23bd04c0915b4ff96dbfd2fcfc175e0a3af5498024f6bd8a4",
+      "bytes": 204672
+    },
+    {
+      "source": "public/img/work/levo/03.jpg",
+      "destination": "assets/client-media/work/levo/03.jpg",
+      "sha256": "438427d97b7337c27a81e328199a836e0bfed2f70e79e000cabc8588a0ae0dc8",
+      "bytes": 88109
+    },
+    {
+      "source": "public/img/work/levo/04.jpg",
+      "destination": "assets/client-media/work/levo/04.jpg",
+      "sha256": "e09128a5a7b93e8a1d1d0007090c74bdfb338b0c39c157348d99a0d706639e95",
+      "bytes": 135239
+    },
+    {
+      "source": "public/img/work/levo/05.jpg",
+      "destination": "assets/client-media/work/levo/05.jpg",
+      "sha256": "a5535f6d7520609c558215f437e168bc5027c722c05dceb96c291fcb6540200b",
+      "bytes": 139924
+    },
+    {
+      "source": "public/img/work/levo/06.jpg",
+      "destination": "assets/client-media/work/levo/06.jpg",
+      "sha256": "1d7c5cce089d2755687c3d6af4dc9c8c53bfdcaad044a6c0792af09f6dc97993",
+      "bytes": 87048
+    },
+    {
+      "source": "public/img/work/levo/cafe-terrace.png",
+      "destination": "assets/client-media/work/levo/cafe-terrace.png",
+      "sha256": "c4af5803505ef3cfdc62b7273be078ff5f78851ff9a67305f5e2389bc3e2f109",
+      "bytes": 2546786
+    },
+    {
+      "source": "public/img/work/levo/storefront.png",
+      "destination": "assets/client-media/work/levo/storefront.png",
+      "sha256": "32acf6e87de1b323f63566dce4f27107300fad40d3a753d55f6e6e6e57fa8e48",
+      "bytes": 1192258
+    },
+    {
+      "source": "public/img/work/olvy/01.jpg",
+      "destination": "assets/client-media/work/olvy/01.jpg",
+      "sha256": "4f1353819c97301a768cf74ad3c681b9b08a6640dd1f99335ad9bc897fa771df",
+      "bytes": 243286
+    },
+    {
+      "source": "public/img/work/olvy/02.jpg",
+      "destination": "assets/client-media/work/olvy/02.jpg",
+      "sha256": "2c14b74d9a7071845f1630fe7c7ad061d17f370d7ed25468223759ce7f869908",
+      "bytes": 319489
+    },
+    {
+      "source": "public/img/work/olvy/03.jpg",
+      "destination": "assets/client-media/work/olvy/03.jpg",
+      "sha256": "13b395e578277f50944496be7b9d727cf29da12b6a4a767217d37555ae8626a1",
+      "bytes": 145710
+    },
+    {
+      "source": "public/img/work/olvy/04.jpg",
+      "destination": "assets/client-media/work/olvy/04.jpg",
+      "sha256": "80a861fc04a3bce4978028f416fbb2139d8939581c00b56240e0d2caaa1d6f07",
+      "bytes": 706662
+    },
+    {
+      "source": "public/img/work/olvy/05.jpg",
+      "destination": "assets/client-media/work/olvy/05.jpg",
+      "sha256": "c428d5ac0bc709397c01aa296bcbaa83a87ad776b8db027640d49106f403ff91",
+      "bytes": 562942
+    },
+    {
+      "source": "public/img/work/olvy/06.jpg",
+      "destination": "assets/client-media/work/olvy/06.jpg",
+      "sha256": "85a61e4322544c378c38f25105ba23dba0d4d305d0fcab46e86bb069757cb4a8",
+      "bytes": 135218
+    },
+    {
+      "source": "public/img/work/olvy/07.jpg",
+      "destination": "assets/client-media/work/olvy/07.jpg",
+      "sha256": "4d63b3551acc35385c523bddb64ac3837ebca2093163b1d610922f81a7f5b6d0",
+      "bytes": 148349
+    },
+    {
+      "source": "public/img/work/salt-beach/01.jpg",
+      "destination": "assets/client-media/work/salt-beach/01.jpg",
+      "sha256": "dd0c91656f9a3e2b5e7667c18a0a8ef3c5be6e89eec1fa52d724bb59a9ddb0db",
+      "bytes": 456500
+    },
+    {
+      "source": "public/img/work/salt-beach/02.jpg",
+      "destination": "assets/client-media/work/salt-beach/02.jpg",
+      "sha256": "1d9650eae7c0d71595076d4496d42fe979633a6a6c5c5cda7d4cee892b2c005a",
+      "bytes": 418386
+    },
+    {
+      "source": "public/img/work/salt-beach/03.jpg",
+      "destination": "assets/client-media/work/salt-beach/03.jpg",
+      "sha256": "114c564fc091da8be200f92dde40567218b64625ca1640936d12c02ab0a91851",
+      "bytes": 686488
+    },
+    {
+      "source": "public/img/work/salt-beach/04.jpg",
+      "destination": "assets/client-media/work/salt-beach/04.jpg",
+      "sha256": "0d2ea60f21ce6b2f2e88d93469d0a73ccddb41a6d4aecf61112686f902aa2a1b",
+      "bytes": 1040755
+    },
+    {
+      "source": "public/img/work/salt-beach/05.jpg",
+      "destination": "assets/client-media/work/salt-beach/05.jpg",
+      "sha256": "8f451ab9b61e3f16f23ed7ae89cca1d47c9d93545d4bf42c652091e864bb6893",
+      "bytes": 416362
+    },
+    {
+      "source": "public/img/work/salt-beach/06.jpg",
+      "destination": "assets/client-media/work/salt-beach/06.jpg",
+      "sha256": "74809bfb55c26eaf12191657c95ed427b29bd1228cd8fa30ca755f1799df69a7",
+      "bytes": 463870
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "partt-website",
+  "version": "1.0.0",
+  "private": true,
+  "engines": { "node": ">=18" },
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "start:prod": "node scripts/start-prod.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/verify-content.mjs && node scripts/smoke.mjs",
+    "test:motion": "node scripts/verify-motion.mjs",
+    "test:deploy": "node scripts/verify-deploy.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1"
+  }
+}

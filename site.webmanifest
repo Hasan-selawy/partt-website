@@ -1,0 +1,19 @@
+{
+  "name": "partt",
+  "short_name": "partt",
+  "description": "Partt is a full-service marketing agency in Amman. Strategy, branding, digital, content, events and growth. Part of your team.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#0B0344",
+  "theme_color": "#0B0344",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
